@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student portfolio directory for GEC Wayanad.">
+    <title>Student Portfolio | GEC Wayanad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="GEC Wayanad Student Portfolio home">
+                <span class="brand-mark" aria-hidden="true">G</span>
+                <span>
+                    <strong>GEC Wayanad</strong>
+                    <small>Student Portfolio Directory</small>
+                </span>
+            </a>
+            <nav aria-label="Main navigation">
+                <a href="#students">Students</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">LEARN · BUILD · SHARE</p>
+                <h1 id="hero-title">Discover student talent.</h1>
+                <p class="hero-description">
+                    Explore student profiles, skills, achievements, and academic projects
+                    from Government Engineering College Wayanad.
+                </p>
+                <a class="hero-link" href="#students">Explore portfolios <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <div class="art-circle circle-one"></div>
+                <div class="art-circle circle-two"></div>
+                <div class="art-card">
+                    <span class="art-icon">✦</span>
+                    <span class="art-line line-long"></span>
+                    <span class="art-line line-short"></span>
+                    <span class="art-tag">Create something meaningful</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="directory section-wrap" id="students" aria-labelledby="directory-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE DIRECTORY</p>
+                    <h2 id="directory-title">Student portfolios</h2>
+                    <p class="section-description">Search by name, department, skill, semester, or project.</p>
+                </div>
+                <p class="student-count" id="student-count" aria-live="polite">Loading portfolios…</p>
+            </div>
+
+            <form class="search-form" role="search" onsubmit="return false;">
+                <label class="sr-only" for="search-input">Search student portfolios</label>
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input
+                    id="search-input"
+                    type="search"
+                    placeholder="Try “JavaScript”, “CSE”, or a student name…"
+                    autocomplete="off"
+                    aria-controls="student-grid"
+                >
+                <button id="clear-search" class="clear-button" type="button" hidden>Clear</button>
+            </form>
+
+            <div id="status-message" class="status-message" role="status" aria-live="polite">
+                Loading student data…
+            </div>
+            <div id="student-grid" class="student-grid" aria-label="Student portfolio results"></div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="about-inner">
+                <div class="about-symbol" aria-hidden="true"></div>
+                <div>
+                    <p class="eyebrow">ABOUT THIS DIRECTORY</p>
+                    <h2 id="about-title">One dataset. Many portfolios.</h2>
+                    <p>
+                        Student information is stored separately in a structured JSON file.
+                        JavaScript reads the data and builds the portfolio cards, making the
+                        content easier to maintain and update without changing the page layout.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p><strong>GEC Wayanad</strong> · Student Portfolio Directory</p>
+            <p>Built with HTML5, CSS3, Vanilla JavaScript, and JSON.</p>
+        </div>
+    </footer>
+</body>
+</html>

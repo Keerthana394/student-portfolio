@@ -1,0 +1,110 @@
+
+{
+  "graph": [
+    {
+      "id": "student-001",
+      "type": "Student",
+      "name": "Alice A",
+      "rollNo": "CSE23-001",
+      "department": "Computer Science and Engineering",
+      "semester": "S7",
+      "email": "alice@gecwyd.ac.in",
+      "bio": "Computer Science student interested in web development and artificial intelligence.",
+      "skills": [
+        "JavaScript",
+        "Python",
+        "Linux",
+        "Web Development"
+      ],
+      "projects": [
+        "project-001",
+        "project-002"
+      ],
+      "achievements": [
+        "Winner - GEC Wayanad Hackathon 2025",
+        "NPTEL Certification in Programming"
+      ]
+    },
+    {
+      "id": "student-002",
+      "type": "Student",
+      "name": "Rahul K",
+      "rollNo": "CSE23-002",
+      "department": "Computer Science and Engineering",
+      "semester": "S7",
+      "email": "rahul@gecwyd.ac.in",
+      "bio": "Student exploring data analytics, database systems, and useful digital solutions.",
+      "skills": [
+        "SQL",
+        "Python",
+        "Data Analytics",
+        "HTML"
+      ],
+      "projects": [
+        "project-003"
+      ],
+      "achievements": [
+        "Completed SQL for Data Analysis",
+        "Participant - College Project Expo"
+      ]
+    },
+    {
+      "id": "student-003",
+      "type": "Student",
+      "name": "Meera P",
+      "rollNo": "CSE23-003",
+      "department": "Computer Science and Engineering",
+      "semester": "S7",
+      "email": "meera@gecwyd.ac.in",
+      "bio": "Interested in user-friendly websites, accessible design, and frontend development.",
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Responsive Design"
+      ],
+      "projects": [
+        "project-001"
+      ],
+      "achievements": [
+        "Web Design Workshop Participant",
+        "Department Project Presentation"
+      ]
+    },
+    {
+      "id": "project-001",
+      "type": "Project",
+      "title": "Campus Navigation System",
+      "description": "A web application for navigating the GEC Wayanad campus.",
+      "technology": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "project-002",
+      "type": "Project",
+      "title": "Smart Attendance System",
+      "description": "A prototype system for automated attendance management.",
+      "technology": [
+        "Python",
+        "OpenCV"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "project-003",
+      "type": "Project",
+      "title": "Student Performance Analysis",
+      "description": "An application for exploring student performance using data analytics.",
+      "technology": [
+        "Python",
+        "SQL",
+        "Data Analytics"
+      ],
+      "year": 2026
+    }
+  ]
+}
